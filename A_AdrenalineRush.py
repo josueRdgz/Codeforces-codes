@@ -9,7 +9,7 @@ def AdrenalileRush(start, final):
     while there_was_a_change:
         there_was_a_change = False
 
-        for car in range(len(start)-1):  # revisar caso [1,2,3]
+        for car in range(len(start)-1):
             if start[car+1] == final[car+1] and (start[car] in log[start[car+1]] or start[car+1] in log[start[car]]):
                 continue
             if (final.index(start[car]) < final.index(start[car+1])) and (start[car+1] in log[start[car]]):
